@@ -46,7 +46,7 @@ public class EquipScript : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(Camera.transform.position, Camera.transform.forward, out hit, range))
         {
-            Debug.Log(hit.transform.name);
+            Debug.Log(hit.transform.name + " is within range.");
 
             Target target = hit.transform.GetComponent<Target>();
             if (target != null)
